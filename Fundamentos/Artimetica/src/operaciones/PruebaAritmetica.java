@@ -2,6 +2,12 @@ package operaciones;
 
 public class PruebaAritmetica {
     public static void main(String[] args) {
+        
+        // Variables locales
+        int a = 10;
+        int b = 2;
+        miMetodo();
+        
         Aritmetica aritmetica1 = new Aritmetica();
         System.out.println("aritmetica1 a:" + aritmetica1.a);
         System.out.println("aritmetica1 b:" + aritmetica1.b);
@@ -19,5 +25,11 @@ public class PruebaAritmetica {
 //        
 //        resultado = aritmetica1.sumarConArgumentos(5, 8);
 //        System.out.println("resultado usando argumentos = " + resultado);
+    }
+    
+    public static void miMetodo() {
+        // la variable a esta fuera del alcance donde fue definida
+        //a = 10;
+        System.out.println("otro metodo");
     }
 }
